@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- NavBar -->
+    <nav>
+        <!-- Main Nav -->
+    <div class="main-nav container flex">
+
+        <!-- News Logo -->
+        <a href="#" onclick="reload()" class="company-logo">
+            <img src="logo.jpg" alt="company logo">
+        </a>
+
+        <!-- Nav Links -->
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+            </ul>
+        </div>
+
+        <!-- Search -->
+        <div class="search-bar flex">
+           <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+           <button id="search-button" class="search-button">Search</button>
+        </div>
+
+    </div>
+    </nav>
+
+
+    <!-- Main -->
+    <main>
+        <!-- Main Cards container -->
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <!-- Template -->
+    <template id="template-news-card">
+
+        <!-- Designing first card -->
+
+            <!-- Card Header -->
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="new-image" id="news-img">
+                </div>
+
+                <!-- Card Content -->
+                <div class="card-content">
+                    <h3 id="news-title">This is the title</h3>
+                    <h6 class="news-source" ud="news-source">End Gadget 26/11/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat commodi cumque obcaecati totam ab reiciendis fugiat distinctio culpa odio!</p>
+                </div>
+            </div>
+
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
